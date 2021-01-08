@@ -10,13 +10,9 @@ import Foundation
 class UserInfo{
     var likedTitleArray:[String] = [""]
     var likedUrlArray:[String] = [""]
-    var totalStudyTime:String = ""
-    var launguageStudyTime:String = ""
-    init(likedTitleArray:[String],likedUrlArray:[String],totalStudyTime:String,launguageStudyTime:String) {
+    init(likedTitleArray:[String],likedUrlArray:[String]) {
         self.likedTitleArray = likedTitleArray
         self.likedUrlArray = likedUrlArray
-        self.totalStudyTime = totalStudyTime
-        self.launguageStudyTime = launguageStudyTime
         
     }
 }
