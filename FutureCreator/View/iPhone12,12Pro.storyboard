@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PG3-1v-2Ka">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="b04-X2-4ik">
+            <objects>
+                <viewController id="mFJ-zv-ZOX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MQ3-ul-Pko">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="当アプリの機能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zth-kF-LJ1">
+                                <rect key="frame" x="120" y="20" width="151" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学習内容記録&amp;Twitter投稿機能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMH-Tk-bgM">
+                                <rect key="frame" x="46" y="63" width="312" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="簡単クリックで学習内容を選択しTwitterに投稿することもできる。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyw-iW-XFt">
+                                <rect key="frame" x="66" y="128" width="258" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="カレンダー機能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNU-YJ-lEc">
+                                <rect key="frame" x="120" y="213" width="151" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qiita検索&amp;お気に入り機能" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeG-Pd-biG">
+                                <rect key="frame" x="74" y="408" width="242" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Qiitaで検索し、下に表示されている文字をクリックするとそのWebページに画面遷移する。さらに左ドラッグでお気に入りに登録することができる。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRn-nk-mmY">
+                                <rect key="frame" x="60" y="449" width="285" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お気に入り閲覧機能" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Od-9J-igY">
+                                <rect key="frame" x="91" y="605" width="209" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⚠️カレンダーの日付と内容にずれがある場合、日付を二度クリックしてください" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbQ-Hv-R30">
+                                <rect key="frame" x="68" y="332" width="255" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="保存した学習記録をカレンダーで閲覧出来、内容の追加も可能。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhV-qg-GeC">
+                                <rect key="frame" x="72" y="266" width="247" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⚠️先にログインしていないとお気に入り機能は使えません" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIt-03-8yN">
+                                <rect key="frame" x="91" y="546" width="209" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="お気に入りに登録した内容が表示され、クリックするとそのWebページに画面遷移する。さらにそれを左ドラッグで削除できる。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1w-0H-SfJ">
+                                <rect key="frame" x="72" y="651" width="247" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.14999999999999999" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i0R-yQ-BUK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jh-LF-397" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933.84615384615381" y="-1836.255924170616"/>
+        </scene>
+        <!--Mail Register View Controller-->
+        <scene sceneID="TjP-Jq-GJY">
+            <objects>
+                <viewController id="6pc-zW-M1e" customClass="MailRegisterViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rZO-8G-Agd">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEU-jR-2Su" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="48" y="322" width="295" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGL-vJ-CJf" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="52" y="213" width="295" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ニックネーム" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iTq-2e-3yW" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="48" y="133" width="295" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⚠️ご自身のメールアドレスを入力して下さい" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eB-lE-p2q">
+                                <rect key="frame" x="52" y="255" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⚠️半角英数字で６文字以上で入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-nd-2Es">
+                                <rect key="frame" x="52" y="372" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35j-u4-Cat" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="111" y="474" width="168" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="新規登録"/>
+                                <connections>
+                                    <action selector="register:" destination="6pc-zW-M1e" eventType="touchUpInside" id="Xs9-97-mMo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⚠️[¥^/-などの記号は入力しないでください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNa-aF-obq">
+                                <rect key="frame" x="52" y="284" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⚠️一度登録すると変更出来ません" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmV-Cp-cvd">
+                                <rect key="frame" x="48" y="175" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⚠️[¥^/-などの記号は入力しないでください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTH-iZ-fpT">
+                                <rect key="frame" x="52" y="401" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="63Q-E5-hgW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Dy-xQ-a5S"/>
+                    <connections>
+                        <outlet property="mailTextField" destination="dGL-vJ-CJf" id="Nqg-o5-cMn"/>
+                        <outlet property="passwordTextField" destination="eEU-jR-2Su" id="qVe-CB-VbB"/>
+                        <outlet property="registerButton" destination="35j-u4-Cat" id="Png-q2-ume"/>
+                        <outlet property="userNameTextField" destination="iTq-2e-3yW" id="oYx-au-rai"/>
+                        <segue destination="zSG-o9-CLh" kind="presentation" identifier="toMailLogin" id="od6-5L-5QK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqn-6M-SY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956.521739130435" y="-1827.4553571428571"/>
+        </scene>
+        <!--Mail Login View Controller-->
+        <scene sceneID="uyH-NY-dtl">
+            <objects>
+                <viewController id="zSG-o9-CLh" customClass="MailLoginViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k8q-51-0BH" customClass="KaedeTextField" customModule="TextFieldEffects">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DbQ-Nl-Kxi" customClass="KaedeTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="57" y="222" width="270" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nio-2M-Dyb">
+                                <rect key="frame" x="57" y="125" width="270" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adm-W8-YoB" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="114" y="349" width="156" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="ログイン"/>
+                                <connections>
+                                    <action selector="login:" destination="zSG-o9-CLh" eventType="touchUpInside" id="awX-te-H70"/>
+                                    <action selector="register:" destination="6pc-zW-M1e" eventType="touchUpInside" id="p6L-eU-fuD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rDH-Xn-uzh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ndT-DQ-vai"/>
+                    <connections>
+                        <outlet property="loginButton" destination="adm-W8-YoB" id="IYE-4Q-f6f"/>
+                        <outlet property="mailTextField" destination="Nio-2M-Dyb" id="Jm9-cK-jXP"/>
+                        <outlet property="passwordTextField" destination="DbQ-Nl-Kxi" id="W9d-Ei-hfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FE3-aR-dB4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2984.057971014493" y="-1849.5535714285713"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="n9a-2y-BXW">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="vxz-vE-dUA" customClass="MenuViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="8sp-Ei-o8a">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tne-7I-AlF">
+                                <rect key="frame" x="0.0" y="0.0" width="184" height="761"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eY-9e-vtS">
+                                        <rect key="frame" x="2" y="188" width="181" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="メールで新規登録"/>
+                                        <connections>
+                                            <action selector="mailRegister:" destination="vxz-vE-dUA" eventType="touchUpInside" id="AVX-cS-S16"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptu-qO-Z0z">
+                                        <rect key="frame" x="0.0" y="429" width="108" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNL-fR-bOB">
+                                        <rect key="frame" x="124" y="429" width="57" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcA-8H-ul2">
+                                        <rect key="frame" x="2" y="241" width="181" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="ログアウト"/>
+                                        <connections>
+                                            <action selector="logout:" destination="vxz-vE-dUA" eventType="touchUpInside" id="sDI-Ku-5mo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzM-1k-vEO">
+                                        <rect key="frame" x="16" y="42" width="146" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="使用方法">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toHowToView:" destination="vxz-vE-dUA" eventType="touchUpInside" id="3rx-UY-4nA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0H-p3-11m">
+                                        <rect key="frame" x="17" y="497" width="147" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="カレンダーリセット">
+                                            <color key="titleColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="allDelete:" destination="vxz-vE-dUA" eventType="touchUpInside" id="VND-2e-cRR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOE-47-8pc">
+                                        <rect key="frame" x="8" y="129" width="181" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="メールでログイン"/>
+                                        <connections>
+                                            <action selector="mailLogin:" destination="vxz-vE-dUA" eventType="touchUpInside" id="HhM-8y-y1E"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6un-p7-W91"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="howToUseButton" destination="GzM-1k-vEO" id="aJT-Vm-z8g"/>
+                        <outlet property="mailLoginButton" destination="LOE-47-8pc" id="VKQ-Ed-T3C"/>
+                        <outlet property="mailRegisterButton" destination="8eY-9e-vtS" id="iQ2-D0-Z5v"/>
+                        <outlet property="menuView" destination="Tne-7I-AlF" id="ojY-b7-Fv7"/>
+                        <outlet property="useStatusLabel" destination="TNL-fR-bOB" id="249-xP-HO1"/>
+                        <outlet property="userNameLabel" destination="Ptu-qO-Z0z" id="qcJ-Kg-CYi"/>
+                        <segue destination="6pc-zW-M1e" kind="presentation" identifier="toMailRegister" id="PYd-mQ-VCa"/>
+                        <segue destination="zSG-o9-CLh" kind="presentation" identifier="toMailLogin" id="gac-1q-FYD"/>
+                        <segue destination="mFJ-zv-ZOX" kind="presentation" identifier="toHowToView" id="b3V-fW-9QI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nw6-Zu-XfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043.0769230769231" y="-843.12796208530801"/>
+        </scene>
+        <!--Archive View Controller-->
+        <scene sceneID="UwJ-n2-XrS">
+            <objects>
+                <viewController id="KUu-Nw-gu8" customClass="ArchiveViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hEz-nl-UPU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fho-gz-OXp" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="20" y="112" width="57" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="menu"/>
+                                <connections>
+                                    <segue destination="vxz-vE-dUA" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="QYa-sj-LFU"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="mah-4k-VxF">
+                                <rect key="frame" x="0.0" y="220" width="390" height="253"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTl-5F-Dx0">
+                                <rect key="frame" x="56" y="206" width="303" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqx-sD-iYH" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="289" y="112" width="85" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="日付変更"/>
+                                <connections>
+                                    <action selector="dateChange:" destination="KUu-Nw-gu8" eventType="touchUpInside" id="u9i-9V-Ybr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijM-1z-svU" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="107" y="557" width="177" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92159587139999999" green="0.92154115439999995" blue="0.92157012220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="本日の積みあげ！">
+                                    <color key="titleColor" systemColor="systemPurpleColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="toMethodView:" destination="KUu-Nw-gu8" eventType="touchUpInside" id="NZu-Fc-zxK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hqe-MW-wxB"/>
+                        <color key="backgroundColor" red="0.92159587139999999" green="0.92154115439999995" blue="0.92157012220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zzx-Lr-cNe"/>
+                    <connections>
+                        <outlet property="dateButton" destination="hqx-sD-iYH" id="rF2-iU-FgL"/>
+                        <outlet property="datePicker" destination="mah-4k-VxF" id="gNe-om-5JW"/>
+                        <outlet property="menuButton" destination="fho-gz-OXp" id="RwB-lx-SX1"/>
+                        <outlet property="randomWordTextField" destination="wTl-5F-Dx0" id="Wjq-Pz-6xC"/>
+                        <outlet property="startButton" destination="ijM-1z-svU" id="jAm-g6-9HE"/>
+                        <segue destination="pUZ-U6-Gpa" kind="show" identifier="toMethodView" id="Nvb-w9-t1f"/>
+                        <segue destination="6pc-zW-M1e" kind="presentation" identifier="toMailRegister1" modalPresentationStyle="fullScreen" id="xpK-Yj-VvQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3P-xY-wL9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955.3846153846152" y="115.16587677725119"/>
+        </scene>
+        <!--Select Method View View Controller-->
+        <scene sceneID="eic-RY-ZqB">
+            <objects>
+                <viewController id="pUZ-U6-Gpa" customClass="SelectMethodViewViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HFE-ak-uNM">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdo-eE-Jyc" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="92" y="232" width="196" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="オフライン"/>
+                                <connections>
+                                    <action selector="toSchoolView:" destination="pUZ-U6-Gpa" eventType="touchUpInside" id="u6a-hi-qAQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxw-Dy-ZVC" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="92" y="452" width="196" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="オンライン/独学"/>
+                                <connections>
+                                    <action selector="toAloneView:" destination="pUZ-U6-Gpa" eventType="touchUpInside" id="yGm-Sq-Zpo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="meo-7X-GH0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BgE-ve-TdI"/>
+                    <connections>
+                        <outlet property="aloneButton" destination="lxw-Dy-ZVC" id="jqr-Rs-Dda"/>
+                        <outlet property="progSchoolButton" destination="Jdo-eE-Jyc" id="gZR-Df-Yul"/>
+                        <segue destination="UO2-zu-MVc" kind="show" identifier="toOfflineView" id="zlZ-tN-zjn"/>
+                        <segue destination="yJp-F5-ffF" kind="show" identifier="toOnlineView" id="tsi-54-RUg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yw-YS-w3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815.9420289855075" y="138.61607142857142"/>
+        </scene>
+        <!--Select School View Controller-->
+        <scene sceneID="xij-Iw-zTH">
+            <objects>
+                <viewController id="UO2-zu-MVc" customClass="SelectSchoolViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YD5-yq-NUY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnM-ho-W8q" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="48" y="211" width="134" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="TECH::CAMP">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectTechcamp:" destination="UO2-zu-MVc" eventType="touchUpInside" id="h2p-Ea-hTF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yl0-bI-C7o" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="211" y="211" width="136" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="TECH::EXPERT">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectTechExpert:" destination="UO2-zu-MVc" eventType="touchUpInside" id="bmy-px-o0M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtW-d9-ce4" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="211" y="383" width="136" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="DMM WEBCAMP">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectDmmCamp:" destination="UO2-zu-MVc" eventType="touchUpInside" id="zPD-Ht-avM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMS-SG-jC3" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="48" y="534" width="134" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="ポテパンキャンプ">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPotepan:" destination="UO2-zu-MVc" eventType="touchUpInside" id="ugE-Eq-W0v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNo-t5-DFx" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="48" y="383" width="134" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="侍エンジニア塾">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectSamurai:" destination="UO2-zu-MVc" eventType="touchUpInside" id="ZnO-RE-YA4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スクールを選択してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvu-rt-EMg">
+                                <rect key="frame" x="85" y="68" width="208" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="その他の場合記入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zSF-1U-XEt">
+                                <rect key="frame" x="48" y="142" width="208" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6U-kw-Lsi" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="276" y="142" width="84" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="記入完了">
+                                    <color key="titleColor" systemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishAnotherSchool:" destination="UO2-zu-MVc" eventType="touchUpInside" id="g0x-h7-aLG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksc-TT-bjr" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="211" y="534" width="136" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="KENスクール">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectKen:" destination="UO2-zu-MVc" eventType="touchUpInside" id="0Qi-lL-2lj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SJT-JQ-Dtd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q42-HS-6sD"/>
+                    <connections>
+                        <outlet property="anotherButton7" destination="a6U-kw-Lsi" id="h5S-bR-1LT"/>
+                        <outlet property="anotherTextField" destination="zSF-1U-XEt" id="ONf-dv-Nb3"/>
+                        <outlet property="schooButton1" destination="qnM-ho-W8q" id="fGc-Jm-yOO"/>
+                        <outlet property="schooButton2" destination="yl0-bI-C7o" id="H5z-Of-Nvu"/>
+                        <outlet property="schooButton3" destination="TNo-t5-DFx" id="Y3X-4T-DoL"/>
+                        <outlet property="schooButton4" destination="NtW-d9-ce4" id="EP1-1b-fh0"/>
+                        <outlet property="schooButton5" destination="mMS-SG-jC3" id="OIO-tD-d4U"/>
+                        <outlet property="schooButton6" destination="ksc-TT-bjr" id="MN0-Mf-KVU"/>
+                        <segue destination="8Kg-6d-N7i" kind="show" identifier="toSelectAttribute" id="9nZ-VA-1cB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQg-3M-o2j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4586.9565217391309" y="-752.67857142857144"/>
+        </scene>
+        <!--Select Launguage View Controller-->
+        <scene sceneID="1Jh-PP-S4B">
+            <objects>
+                <viewController id="h8i-lP-1ML" customClass="SelectLaunguageViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Whx-pg-XT9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8B-di-IW7" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="152" y="172" width="85" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="php"/>
+                                <connections>
+                                    <action selector="selectPhp:" destination="h8i-lP-1ML" eventType="touchUpInside" id="pQN-xE-CJh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJB-jZ-UJ2" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="279" y="172" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="sql"/>
+                                <connections>
+                                    <action selector="selectSql:" destination="h8i-lP-1ML" eventType="touchUpInside" id="dKK-j8-DnG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyw-WL-QUH" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="15" y="279" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="python"/>
+                                <connections>
+                                    <action selector="selectPython:" destination="h8i-lP-1ML" eventType="touchUpInside" id="mne-ff-zRR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azi-rV-dKF" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="145" y="279" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="swift"/>
+                                <connections>
+                                    <action selector="selectSwift:" destination="h8i-lP-1ML" eventType="touchUpInside" id="3t9-pb-8GT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxW-Ce-Izs" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="279" y="279" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="ruby"/>
+                                <connections>
+                                    <action selector="selectRuby:" destination="h8i-lP-1ML" eventType="touchUpInside" id="Ow5-Z2-r9y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giq-c2-mVZ" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="15" y="388" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="rails"/>
+                                <connections>
+                                    <action selector="selectRails:" destination="h8i-lP-1ML" eventType="touchUpInside" id="C6E-eN-1XZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tX0-ik-KHI" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="15" y="499" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="django"/>
+                                <connections>
+                                    <action selector="selectDjango:" destination="h8i-lP-1ML" eventType="touchUpInside" id="36O-dL-hRt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4C-Ma-O6P" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="147" y="497" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="javascript"/>
+                                <connections>
+                                    <action selector="selectJavaScripts:" destination="h8i-lP-1ML" eventType="touchUpInside" id="3Ad-xo-Sia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXn-pa-G2c" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="279" y="499" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="nodejs"/>
+                                <connections>
+                                    <action selector="selectNodeJs:" destination="h8i-lP-1ML" eventType="touchUpInside" id="fqa-ha-E6u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd4-FO-CjH" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="145" y="637" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="go"/>
+                                <connections>
+                                    <action selector="selectGo:" destination="h8i-lP-1ML" eventType="touchUpInside" id="4iO-91-Gtj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lu-Cp-y4h" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="15" y="637" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="html5css3"/>
+                                <connections>
+                                    <action selector="selectHtml5Css3:" destination="h8i-lP-1ML" eventType="touchUpInside" id="lWB-zI-2Pb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="その他の場合記入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzL-zr-1aH">
+                                <rect key="frame" x="60" y="113" width="202" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9a-oO-vZV" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="284" y="113" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="記入完了">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishAnotherLanguage:" destination="h8i-lP-1ML" eventType="touchUpInside" id="pSA-o4-bk8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5df-oO-eBE" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="147" y="388" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="java"/>
+                                <connections>
+                                    <action selector="selectJava:" destination="h8i-lP-1ML" eventType="touchUpInside" id="duu-lw-GC2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK8-Zr-Wdv" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="279" y="637" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="jquery"/>
+                                <connections>
+                                    <action selector="selectJquery:" destination="h8i-lP-1ML" eventType="touchUpInside" id="Sjt-C5-5aa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-jh-9bZ" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="276" y="388" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="kotlin"/>
+                                <connections>
+                                    <action selector="selectKotlin:" destination="h8i-lP-1ML" eventType="touchUpInside" id="Lpg-a7-fUi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaZ-sW-oew" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="15" y="172" width="95" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="laravel"/>
+                                <connections>
+                                    <action selector="selectLaravel:" destination="h8i-lP-1ML" eventType="touchUpInside" id="0Ro-nj-pRw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yRl-SJ-FMV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Q3-Rv-npM"/>
+                    <connections>
+                        <outlet property="anotherButton" destination="f9a-oO-vZV" id="sA8-lg-vKG"/>
+                        <outlet property="anotherTextField" destination="gzL-zr-1aH" id="RIZ-8c-m7Y"/>
+                        <outlet property="launguageButton1" destination="GaZ-sW-oew" id="dvy-pk-Wo6"/>
+                        <outlet property="launguageButton10" destination="tX0-ik-KHI" id="EhS-uk-6em"/>
+                        <outlet property="launguageButton11" destination="G4C-Ma-O6P" id="ZhU-iJ-Hpd"/>
+                        <outlet property="launguageButton12" destination="bXn-pa-G2c" id="Llu-Ux-ejq"/>
+                        <outlet property="launguageButton13" destination="9Lu-Cp-y4h" id="iyh-ee-Wc0"/>
+                        <outlet property="launguageButton14" destination="sd4-FO-CjH" id="g4u-fM-sGD"/>
+                        <outlet property="launguageButton15" destination="oK8-Zr-Wdv" id="MIB-7e-f7u"/>
+                        <outlet property="launguageButton2" destination="a8B-di-IW7" id="oif-Xb-qyw"/>
+                        <outlet property="launguageButton3" destination="tJB-jZ-UJ2" id="ge9-UD-Sqe"/>
+                        <outlet property="launguageButton4" destination="Dyw-WL-QUH" id="2dE-P9-2sJ"/>
+                        <outlet property="launguageButton5" destination="Azi-rV-dKF" id="bA2-Wl-ewT"/>
+                        <outlet property="launguageButton6" destination="TxW-Ce-Izs" id="TZc-bo-sXN"/>
+                        <outlet property="launguageButton7" destination="giq-c2-mVZ" id="ZlT-Yh-ycz"/>
+                        <outlet property="launguageButton8" destination="5df-oO-eBE" id="1P0-F6-pJ5"/>
+                        <outlet property="launguageButton9" destination="Tfw-jh-9bZ" id="CFQ-rd-Pzm"/>
+                        <segue destination="Cbr-Nh-hwD" kind="show" identifier="toTimeView" id="qXu-2s-xDG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cyg-Ly-l9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6495.652173913044" y="-655.58035714285711"/>
+        </scene>
+        <!--Select Attribute View Controller-->
+        <scene sceneID="2Ca-FI-lVC">
+            <objects>
+                <viewController id="8Kg-6d-N7i" customClass="SelectAttributeViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHs-7Y-b4T">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95L-Hv-Lp8">
+                                <rect key="frame" x="85" y="254" width="220" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="プログラミング"/>
+                                <connections>
+                                    <action selector="toSelectLaunguage:" destination="8Kg-6d-N7i" eventType="touchUpInside" id="bEt-Jz-Et7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pys-Ww-FNh">
+                                <rect key="frame" x="82" y="448" width="227" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="デザイン/動画編集"/>
+                                <connections>
+                                    <action selector="toSelectAdobe:" destination="8Kg-6d-N7i" eventType="touchUpInside" id="Wda-nY-okF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G1K-lP-JaL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Mx-Gh-kWf"/>
+                    <connections>
+                        <segue destination="h8i-lP-1ML" kind="show" identifier="toSelectLaunguage" id="sN7-ux-l19"/>
+                        <segue destination="U15-JF-8RZ" kind="show" identifier="toSelectAdobe" id="axN-lE-y07"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axj-7I-q7V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5620.289855072464" y="-164.73214285714286"/>
+        </scene>
+        <!--Time View Controller-->
+        <scene sceneID="SKG-aG-BzB">
+            <objects>
+                <viewController id="Cbr-Nh-hwD" customClass="TimeViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBT-V5-6Gm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYs-cz-HxA">
+                                <rect key="frame" x="0.0" y="231" width="390" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHr-E0-KZk">
+                                <rect key="frame" x="154" y="112" width="67" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtT-FG-hQ8">
+                                <rect key="frame" x="229" y="118" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwu-rL-Hja">
+                                <rect key="frame" x="229" y="630" width="117" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="確認画面へ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="toVerifyView:" destination="Cbr-Nh-hwD" eventType="touchUpInside" id="yGG-9u-fAN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PiA-MH-1Eq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fHV-ZT-MQS"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="oHr-E0-KZk" id="bZU-nI-C4I"/>
+                        <outlet property="timePickerView" destination="SYs-cz-HxA" id="bgB-1d-gEF"/>
+                        <segue destination="wwm-Jm-VO0" kind="show" identifier="toVerifyView" id="To7-Qg-kZ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMA-cj-aYH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8111" y="-164"/>
+        </scene>
+        <!--Conf AndSNS View Controller-->
+        <scene sceneID="mjO-7u-hze">
+            <objects>
+                <viewController id="wwm-Jm-VO0" customClass="ConfAndSNSViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1MU-Bu-7jO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学習方法" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31l-ri-8br">
+                                <rect key="frame" x="114" y="113" width="184" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Udemy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJL-q6-1V3">
+                                <rect key="frame" x="133" y="184" width="145" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="言語" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5I-XW-hf2">
+                                <rect key="frame" x="114" y="252" width="184" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwS-lC-dxM">
+                                <rect key="frame" x="124" y="328" width="164" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ton-Uf-3hT">
+                                <rect key="frame" x="114" y="443" width="184" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="２時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVa-bg-T1r">
+                                <rect key="frame" x="150" y="504" width="82" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbg-SR-cKj">
+                                <rect key="frame" x="276" y="510" width="42" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gt0-N9-7lE">
+                                <rect key="frame" x="216" y="682" width="163" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="保存してSNSに投稿">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterShare:" destination="wwm-Jm-VO0" eventType="touchUpInside" id="h6B-lM-OK1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIU-DR-nKF">
+                                <rect key="frame" x="29" y="682" width="157" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="学習内容を保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveOnly:" destination="wwm-Jm-VO0" eventType="touchUpInside" id="ehl-ke-sxg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fk9-6y-xtu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4RU-He-3b4"/>
+                    <connections>
+                        <outlet property="studyHours" destination="qVa-bg-T1r" id="fi9-rt-YfR"/>
+                        <outlet property="studyLanguage" destination="PwS-lC-dxM" id="IQO-Tw-Lhv"/>
+                        <outlet property="studyTypeLabel" destination="HJL-q6-1V3" id="9x4-bl-Azh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8T-0m-yhC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9201.4492753623199" y="-164.0625"/>
+        </scene>
+        <!--記録する-->
+        <scene sceneID="rdl-fm-hII">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x9n-3y-rH3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="記録する" image="square.and.pencil" catalog="system" id="6O3-ME-cs6"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9pi-dN-oWg">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KUu-Nw-gu8" kind="relationship" relationship="rootViewController" id="vhz-jE-Obg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxO-iv-1FD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+        </scene>
+        <!--Search Tab Bar Controller-->
+        <scene sceneID="6id-Wf-uaX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PG3-1v-2Ka" customClass="SearchTabBarController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dTB-eB-Ixj"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ikK-39-9I9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="x9n-3y-rH3" kind="relationship" relationship="viewControllers" id="G9I-gS-xWR"/>
+                        <segue destination="RRj-ew-tIN" kind="relationship" relationship="viewControllers" id="NaZ-i7-K9L"/>
+                        <segue destination="wvW-AF-Pht" kind="relationship" relationship="viewControllers" id="UBG-Jl-4Nk"/>
+                        <segue destination="dmz-rG-GnO" kind="relationship" relationship="viewControllers" id="mqY-Rm-PP0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guL-Wl-VeD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-943" y="117"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="tYa-ib-1qm">
+            <objects>
+                <viewController id="pi6-tv-qog" customClass="SearchViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mIE-ml-gnA">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ooe-7t-Z9w">
+                                <rect key="frame" x="0.0" y="132" width="390" height="629"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Qla-Nh-1Q1">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qla-Nh-1Q1" id="OEj-X1-FbH">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Qiitaで検索します" translatesAutoresizingMaskIntoConstraints="NO" id="Sq8-TE-IuS">
+                                <rect key="frame" x="0.0" y="88" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fl1-4S-PZD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VlW-7M-xTR"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Sq8-TE-IuS" id="DwO-Ol-97W"/>
+                        <outlet property="tableview" destination="Ooe-7t-Z9w" id="Y8n-YM-u7i"/>
+                        <segue destination="Juo-GC-999" kind="show" identifier="toSearchDetail" id="Rcm-o7-Zfe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58E-Jn-4r3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955.3846153846152" y="903.55450236966817"/>
+        </scene>
+        <!--Search Detail View Controller-->
+        <scene sceneID="QZu-ap-Wvc">
+            <objects>
+                <viewController id="Juo-GC-999" customClass="SearchDetailViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwD-Gb-eSu">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aom-Zg-KC1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uxx-cu-fJQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAW-UY-iVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2817" y="904"/>
+        </scene>
+        <!--Liked View Controller-->
+        <scene sceneID="3HC-gf-s2D">
+            <objects>
+                <viewController id="X43-GY-fEg" customClass="likedViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DXs-VJ-LKm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bql-8A-zsm">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="aXr-D1-Xk0">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aXr-D1-Xk0" id="nMs-TE-SCB">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R8P-H2-6SR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aNT-3c-tgy"/>
+                    <connections>
+                        <outlet property="tableView" destination="Bql-8A-zsm" id="1ab-2S-wpL"/>
+                        <segue destination="GNy-1i-eJP" kind="show" identifier="toLikedDetail" id="OSK-SA-eRQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEx-db-ACQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955.3846153846152" y="1691.9431279620853"/>
+        </scene>
+        <!--お気に入り-->
+        <scene sceneID="ofr-Qc-80i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wvW-AF-Pht" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="3" title="お気に入り" image="star" catalog="system" id="Plf-vz-zc8"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hTL-nl-2fO">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X43-GY-fEg" kind="relationship" relationship="rootViewController" id="dBj-IG-kb6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Cl-b6-W8v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="1693"/>
+        </scene>
+        <!--Show Calender View Controller-->
+        <scene sceneID="Iyo-Vk-Oif">
+            <objects>
+                <viewController id="mox-ff-Uws" customClass="ShowCalenderViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="urF-ih-uRz">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="感想など" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq6-Gi-UKe">
+                                <rect key="frame" x="4" y="717" width="259" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="主なスケジュール" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUq-ZP-QyT">
+                                <rect key="frame" x="0.0" y="496" width="203" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvS-b4-Rxo">
+                                <rect key="frame" x="0.0" y="446" width="267" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="71A-ft-W54">
+                                <rect key="frame" x="0.0" y="561" width="390" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="34" id="YvA-dN-6R4">
+                                        <rect key="frame" x="0.0" y="28" width="390" height="34"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YvA-dN-6R4" id="4QH-rk-sRV">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="34"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学習の方法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCA-2d-6Nv">
+                                <rect key="frame" x="16" y="528" width="106" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8o-gC-tBO" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="288" y="715" width="86" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="内容追加">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="toEvent:" destination="mox-ff-Uws" eventType="touchUpInside" id="yPT-8q-Ibn"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pLM-50-Dh4" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="88" width="390" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="yyyy年MM月"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学習時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4B-nE-ECo">
+                                <rect key="frame" x="293" y="530" width="97" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4X-FM-oqy">
+                                <rect key="frame" x="137" y="529" width="103" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="学習内容">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wgd-yD-IoW"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q3r-eL-lJu"/>
+                    <connections>
+                        <outlet property="addContextButton" destination="p8o-gC-tBO" id="VWZ-bT-fQI"/>
+                        <outlet property="dateView" destination="pLM-50-Dh4" id="hkE-K4-5X5"/>
+                        <outlet property="labelTitle" destination="OUq-ZP-QyT" id="5vr-J2-T9e"/>
+                        <outlet property="memoLabel" destination="Xq6-Gi-UKe" id="y1s-Dt-8V5"/>
+                        <outlet property="showDate" destination="dvS-b4-Rxo" id="REy-eW-e0h"/>
+                        <outlet property="tableview" destination="71A-ft-W54" id="DPv-KI-3xw"/>
+                        <segue destination="1ET-G1-JPQ" kind="show" identifier="toEvent" id="evO-Q1-aOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RzO-D7-ba7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955.3846153846152" y="2434.1232227488149"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="bqj-Xa-DuN">
+            <objects>
+                <viewController storyboardIdentifier="Insert" id="1ET-G1-JPQ" customClass="EventViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nl1-vP-Qss">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="内容" translatesAutoresizingMaskIntoConstraints="NO" id="rYy-XX-a0F">
+                                <rect key="frame" x="43" y="184" width="327" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="IIk-Rv-UfS">
+                                <rect key="frame" x="0.0" y="352" width="390" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="追加内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-Lm-AXE">
+                                <rect key="frame" x="44" y="110" width="105" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日付表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDT-zn-TMW">
+                                <rect key="frame" x="44" y="560" width="164" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch8-VU-65f" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="131" y="623" width="150" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="内容を保存">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveEvent:" destination="1ET-G1-JPQ" eventType="touchUpInside" id="JvC-ds-EzS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Wo-mr-cF7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2tb-tF-8vM"/>
+                    <connections>
+                        <outlet property="SaveButton" destination="ch8-VU-65f" id="BSR-SG-dO8"/>
+                        <outlet property="datePicker" destination="IIk-Rv-UfS" id="6Cg-T0-0kR"/>
+                        <outlet property="eventText" destination="rYy-XX-a0F" id="ha7-Wk-euA"/>
+                        <outlet property="showDateText" destination="XDT-zn-TMW" id="E1k-N0-cfS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iba-Nt-B3V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815.3846153846152" y="2434.1232227488149"/>
+        </scene>
+        <!--カレンダー-->
+        <scene sceneID="Sn2-Xd-2Oj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dmz-rG-GnO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="4" title="カレンダー" image="calendar" catalog="system" id="Gly-AS-ICk"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GSW-iP-flC">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mox-ff-Uws" kind="relationship" relationship="rootViewController" id="8bY-s9-wKP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bB-mB-6RD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="2438"/>
+        </scene>
+        <!--Select Media View Controller-->
+        <scene sceneID="bSU-Dz-SgF">
+            <objects>
+                <viewController id="yJp-F5-ffF" customClass="SelectMediaViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bH1-fh-Usb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa7-wz-bqt" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="49" y="205" width="124" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Udemy">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectUdemy:" destination="yJp-F5-ffF" eventType="touchUpInside" id="G8G-TP-OB4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbR-fG-RnE" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="209" y="205" width="124" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="Progate">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectProgate:" destination="yJp-F5-ffF" eventType="touchUpInside" id="Z6d-yQ-E8d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0er-gC-CKa" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="49" y="359" width="138" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="TechAcademy">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectTechAcademy:" destination="yJp-F5-ffF" eventType="touchUpInside" id="Fh5-wn-RW2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSa-6e-O3O" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="209" y="359" width="124" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="CodeCamp">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectCodeCamp:" destination="yJp-F5-ffF" eventType="touchUpInside" id="2jr-Et-d4q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk2-Qm-onh" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="49" y="548" width="124" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="デイトラ">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectDayTry:" destination="yJp-F5-ffF" eventType="touchUpInside" id="Kuw-5b-GbX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVe-Pb-hUL" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="209" y="548" width="124" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Hacksシリーズ">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectCodeCamp:" destination="yJp-F5-ffF" eventType="touchUpInside" id="hHg-S6-PbQ"/>
+                                    <action selector="selectHacksSeries:" destination="yJp-F5-ffF" eventType="touchUpInside" id="BDs-GX-uNZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学習媒体を選択してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6U2-RB-sa0">
+                                <rect key="frame" x="71" y="60" width="233" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="その他の場合記入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUf-Sr-A7V">
+                                <rect key="frame" x="61" y="138" width="181" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPk-1E-L0o" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="267" y="138" width="68" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="記入完了">
+                                    <color key="titleColor" systemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishAnotherMedia:" destination="yJp-F5-ffF" eventType="touchUpInside" id="3lt-vB-CPp"/>
+                                    <action selector="finishAnotherSchool:" destination="UO2-zu-MVc" eventType="touchUpInside" id="zvu-X6-m6K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i80-kG-AEZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W3G-vN-XlZ"/>
+                    <connections>
+                        <outlet property="anotherButton" destination="zPk-1E-L0o" id="Gim-gY-gtm"/>
+                        <outlet property="anotherTextField" destination="aUf-Sr-A7V" id="QAS-L5-lX5"/>
+                        <outlet property="mediaButton1" destination="aa7-wz-bqt" id="TOJ-7s-umI"/>
+                        <outlet property="mediaButton2" destination="BbR-fG-RnE" id="ye4-Fr-CQB"/>
+                        <outlet property="mediaButton3" destination="0er-gC-CKa" id="K5L-YL-JBj"/>
+                        <outlet property="mediaButton4" destination="OSa-6e-O3O" id="ttA-sw-c24"/>
+                        <outlet property="mediaButton5" destination="hk2-Qm-onh" id="JKL-Bg-4UG"/>
+                        <outlet property="mediaButton6" destination="IVe-Pb-hUL" id="YJv-C8-wZk"/>
+                        <segue destination="8Kg-6d-N7i" kind="show" identifier="toSelectAttribute" id="27z-mn-ph8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oni-Ig-99W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4586.9565217391309" y="499.55357142857139"/>
+        </scene>
+        <!--Liked Detail View Controller-->
+        <scene sceneID="RF3-Bs-Feb">
+            <objects>
+                <viewController id="GNy-1i-eJP" customClass="LikedDetailViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Sw-Y5-uab">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7YD-fE-tpP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bUG-0O-6ft"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7W-HS-yIX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2817" y="1693"/>
+        </scene>
+        <!--Select Adobe View Controller-->
+        <scene sceneID="TQi-q5-obD">
+            <objects>
+                <viewController id="U15-JF-8RZ" customClass="SelectAdobeViewController" customModule="FutureCreator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vml-To-YuT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="その他の場合記入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ATt-fr-aHO">
+                                <rect key="frame" x="60" y="121" width="189" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hg-Rk-lc7" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="267" y="121" width="78" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="記入完了">
+                                    <color key="titleColor" red="9.2942343600000004e-07" green="0.016013575719999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishAnotherLanguage:" destination="U15-JF-8RZ" eventType="touchUpInside" id="2Fw-gv-LHh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCI-vk-4jp" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="55" y="476" width="100" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="adobeExperiencedesign"/>
+                                <connections>
+                                    <action selector="selectExperience:" destination="U15-JF-8RZ" eventType="touchUpInside" id="oTz-Tu-n6K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFv-uZ-5fe" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="219" y="476" width="100" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="adobeIllustrator"/>
+                                <connections>
+                                    <action selector="selectIllustrator:" destination="U15-JF-8RZ" eventType="touchUpInside" id="ssD-3K-TJF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBx-WP-A95" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="219" y="621" width="100" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="adobePhotoshop"/>
+                                <connections>
+                                    <action selector="selectPhotoshop:" destination="U15-JF-8RZ" eventType="touchUpInside" id="WnC-7p-Sl5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="動画編集" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dex-bZ-wc4">
+                                <rect key="frame" x="127" y="196" width="122" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="デザイン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJi-0a-GoI">
+                                <rect key="frame" x="127" y="410" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpY-6w-AGi" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="219" y="255" width="100" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="adobePremire"/>
+                                <connections>
+                                    <action selector="selectPremire:" destination="U15-JF-8RZ" eventType="touchUpInside" id="I2l-Mm-jPn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75Q-uf-GXQ" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="55" y="621" width="100" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="adobeLightroom"/>
+                                <connections>
+                                    <action selector="selectLightroom:" destination="U15-JF-8RZ" eventType="touchUpInside" id="WBH-Yg-aT9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gN0-OQ-ZBX" customClass="EMTNeumorphicButton" customModule="EMTNeumorphicView">
+                                <rect key="frame" x="55" y="255" width="100" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="adobeAftereffect"/>
+                                <connections>
+                                    <action selector="selectAfterEffect:" destination="U15-JF-8RZ" eventType="touchUpInside" id="Few-4J-8tP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qwZ-uC-9YN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dD1-NY-x6H"/>
+                    <connections>
+                        <outlet property="anotherButton" destination="8hg-Rk-lc7" id="weW-aX-6c8"/>
+                        <outlet property="anotherTextFiled" destination="ATt-fr-aHO" id="vhz-7X-OrL"/>
+                        <segue destination="Cbr-Nh-hwD" kind="show" identifier="toTimeView" id="eZv-6w-Z41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bia-Tw-94z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6495.652173913044" y="400.44642857142856"/>
+        </scene>
+        <!--検索-->
+        <scene sceneID="yGw-2a-ycO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RRj-ew-tIN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="検索" image="magnifyingglass" catalog="system" id="z1n-N1-Qfn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZHx-1b-iz5">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pi6-tv-qog" kind="relationship" relationship="rootViewController" id="xNu-Ui-lfL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9D6-QD-t20" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="906"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="DbQ-Nl-Kxi">
+            <size key="intrinsicContentSize" width="146" height="34"/>
+        </designable>
+        <designable name="dGL-vJ-CJf">
+            <size key="intrinsicContentSize" width="174" height="34"/>
+        </designable>
+        <designable name="eEU-jR-2Su">
+            <size key="intrinsicContentSize" width="146" height="34"/>
+        </designable>
+        <designable name="iTq-2e-3yW">
+            <size key="intrinsicContentSize" width="160" height="34"/>
+        </designable>
+        <designable name="k8q-51-0BH">
+            <size key="intrinsicContentSize" width="65" height="22"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="eZv-6w-Z41"/>
+        <segue reference="27z-mn-ph8"/>
+        <segue reference="gac-1q-FYD"/>
+        <segue reference="xpK-Yj-VvQ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="adobeAftereffect" width="512" height="512"/>
+        <image name="adobeExperiencedesign" width="512" height="512"/>
+        <image name="adobeIllustrator" width="512" height="512"/>
+        <image name="adobeLightroom" width="512" height="512"/>
+        <image name="adobePhotoshop" width="512" height="512"/>
+        <image name="adobePremire" width="512" height="512"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="django" width="500" height="500"/>
+        <image name="go" width="500" height="500"/>
+        <image name="html5css3" width="1920" height="1080"/>
+        <image name="java" width="518" height="518"/>
+        <image name="javascript" width="1170" height="1170"/>
+        <image name="jquery" width="562" height="476"/>
+        <image name="kotlin" width="500" height="500"/>
+        <image name="laravel" width="500" height="500"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="menu" width="512" height="512"/>
+        <image name="nodejs" width="500" height="500"/>
+        <image name="php" width="1280" height="691"/>
+        <image name="python" width="640" height="480"/>
+        <image name="rails" width="500" height="500"/>
+        <image name="ruby" width="500" height="500"/>
+        <image name="sql" width="512" height="512"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="swift" width="500" height="500"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

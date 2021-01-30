@@ -7,20 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B13CD41258E079A0017F116 /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13CD40258E079A0017F116 /* MailViewController.swift */; };
+		7B1DF50E25B6F40A0062B158 /* iPad7,8th.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1DF50D25B6F40A0062B158 /* iPad7,8th.storyboard */; };
 		7B2CF55F252C5B5100F3C62F /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CF55E252C5B5100F3C62F /* TimeViewController.swift */; };
-		7B2E33922519F06F005E6029 /* Test1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E33912519F06F005E6029 /* Test1ViewController.swift */; };
-		7B2E33942519F081005E6029 /* Test2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E33932519F081005E6029 /* Test2ViewController.swift */; };
 		7B2E3396251A1DFC005E6029 /* SelectMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2E3395251A1DFC005E6029 /* SelectMediaViewController.swift */; };
 		7B2F10E024DE72D900DE74ED /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2F10DF24DE72D900DE74ED /* UserInfo.swift */; };
 		7B30408324D523AA0002D28D /* MailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B30408224D523AA0002D28D /* MailRegisterViewController.swift */; };
 		7B30408524D533080002D28D /* MailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B30408424D533080002D28D /* MailLoginViewController.swift */; };
-		7B307C6224C99378005C6D16 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B307C6124C99378005C6D16 /* CalenderViewController.swift */; };
 		7B30988D24CAEEEB00F2F0CF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B30988C24CAEEEB00F2F0CF /* SearchViewController.swift */; };
 		7B30988F24CAFEE700F2F0CF /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B30988E24CAFEE700F2F0CF /* SearchDetailViewController.swift */; };
 		7B32D48325177C3C007B1EE4 /* ShowCalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32D48225177C3C007B1EE4 /* ShowCalenderViewController.swift */; };
 		7B32D48525178420007B1EE4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32D48425178420007B1EE4 /* Event.swift */; };
-		7B33073324C6C50700031649 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B33073224C6C50700031649 /* LanguageViewController.swift */; };
-		7B33073824C6D84800031649 /* DayAndTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B33073724C6D84800031649 /* DayAndTimeViewController.swift */; };
 		7B337E4F25179C4E003252F0 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B337E4E25179C4E003252F0 /* EventViewController.swift */; };
 		7B34788524CC351B0088B1CF /* likedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B34788424CC351B0088B1CF /* likedViewController.swift */; };
 		7B34788724CC463D0088B1CF /* LikedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B34788624CC463D0088B1CF /* LikedDetailViewController.swift */; };
@@ -39,28 +36,40 @@
 		7B40BD1724C1BD5B00E2001F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B40BD1624C1BD5B00E2001F /* Assets.xcassets */; };
 		7B40BD1A24C1BD5B00E2001F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B40BD1824C1BD5B00E2001F /* LaunchScreen.storyboard */; };
 		7B40BD2724C1C66500E2001F /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B40BD2624C1C66500E2001F /* ArchiveViewController.swift */; };
+		7B41E7E925AC274C00997A32 /* iPhone10,10s,11Pro,12mini.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B41E7E825AC274C00997A32 /* iPhone10,10s,11Pro,12mini.storyboard */; };
+		7B45DE7D254C555A00395CFD /* LikedCustumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B45DE7B254C555A00395CFD /* LikedCustumCell.swift */; };
+		7B45DE7E254C555A00395CFD /* LikedCustumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B45DE7C254C555A00395CFD /* LikedCustumCell.xib */; };
+		7B5EEE2525A5F93B000A8C0C /* iPhone12,12Pro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5EEE2425A5F93B000A8C0C /* iPhone12,12Pro.storyboard */; };
+		7B655E6825C54B21003FC2B8 /* iPadPro10.5,Air3th.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B655E6725C54B21003FC2B8 /* iPadPro10.5,Air3th.storyboard */; };
+		7B655E6D25C54E19003FC2B8 /* iPadAir4th.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B655E6C25C54E19003FC2B8 /* iPadAir4th.storyboard */; };
+		7B655E7125C55115003FC2B8 /* iPadPro9.7.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B655E7025C55115003FC2B8 /* iPadPro9.7.storyboard */; };
+		7B655E7525C5551B003FC2B8 /* iPadPro11(2th).storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B655E7425C5551B003FC2B8 /* iPadPro11(2th).storyboard */; };
+		7B655E7925C55930003FC2B8 /* iPadPro12.9(3,4th).storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B655E7825C55930003FC2B8 /* iPadPro12.9(3,4th).storyboard */; };
 		7B727B2D24D038B300B93C57 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B727B2C24D038B300B93C57 /* MenuViewController.swift */; };
 		7B727B2F24D0434400B93C57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B727B2E24D0434400B93C57 /* GoogleService-Info.plist */; };
+		7B72986D259C3BB6005350AE /* registerAnim1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7B72986C259C3BB6005350AE /* registerAnim1.json */; };
+		7B7546942598808300140D7C /* NameRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7546932598808300140D7C /* NameRegisterViewController.swift */; };
+		7B76BEC425A452B0003440FC /* iPhone11,11ProMax.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B76BEC325A452B0003440FC /* iPhone11,11ProMax.storyboard */; };
+		7B97A7F625582B6000EBD594 /* SavedCustumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B97A7F425582B6000EBD594 /* SavedCustumCell.swift */; };
+		7B97A7F725582B6000EBD594 /* SavedCustumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B97A7F525582B6000EBD594 /* SavedCustumCell.xib */; };
+		7BA129F12597534600066146 /* SearchTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA129F02597534600066146 /* SearchTabBarController.swift */; };
 		EAD78F280FE7D3B183B4068F /* Pods_FutureCreator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521F4111E26792B33FAFEEFB /* Pods_FutureCreator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46903D99AE45F0A8075DACFF /* Pods-FutureCreator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FutureCreator.release.xcconfig"; path = "Target Support Files/Pods-FutureCreator/Pods-FutureCreator.release.xcconfig"; sourceTree = "<group>"; };
 		521F4111E26792B33FAFEEFB /* Pods_FutureCreator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FutureCreator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B13CD40258E079A0017F116 /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
+		7B1DF50D25B6F40A0062B158 /* iPad7,8th.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPad7,8th.storyboard"; sourceTree = "<group>"; };
 		7B2CF55E252C5B5100F3C62F /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
-		7B2E33912519F06F005E6029 /* Test1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1ViewController.swift; sourceTree = "<group>"; };
-		7B2E33932519F081005E6029 /* Test2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2ViewController.swift; sourceTree = "<group>"; };
 		7B2E3395251A1DFC005E6029 /* SelectMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMediaViewController.swift; sourceTree = "<group>"; };
 		7B2F10DF24DE72D900DE74ED /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		7B30408224D523AA0002D28D /* MailRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailRegisterViewController.swift; sourceTree = "<group>"; };
 		7B30408424D533080002D28D /* MailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailLoginViewController.swift; sourceTree = "<group>"; };
-		7B307C6124C99378005C6D16 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		7B30988C24CAEEEB00F2F0CF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7B30988E24CAFEE700F2F0CF /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		7B32D48225177C3C007B1EE4 /* ShowCalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCalenderViewController.swift; sourceTree = "<group>"; };
 		7B32D48425178420007B1EE4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		7B33073224C6C50700031649 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
-		7B33073724C6D84800031649 /* DayAndTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayAndTimeViewController.swift; sourceTree = "<group>"; };
 		7B337E4E25179C4E003252F0 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		7B34788424CC351B0088B1CF /* likedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likedViewController.swift; sourceTree = "<group>"; };
 		7B34788624CC463D0088B1CF /* LikedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedDetailViewController.swift; sourceTree = "<group>"; };
@@ -81,8 +90,23 @@
 		7B40BD1924C1BD5B00E2001F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B40BD1B24C1BD5B00E2001F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B40BD2624C1C66500E2001F /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		7B41E7E825AC274C00997A32 /* iPhone10,10s,11Pro,12mini.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPhone10,10s,11Pro,12mini.storyboard"; sourceTree = "<group>"; };
+		7B45DE7B254C555A00395CFD /* LikedCustumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedCustumCell.swift; sourceTree = "<group>"; };
+		7B45DE7C254C555A00395CFD /* LikedCustumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedCustumCell.xib; sourceTree = "<group>"; };
+		7B5EEE2425A5F93B000A8C0C /* iPhone12,12Pro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPhone12,12Pro.storyboard"; sourceTree = "<group>"; };
+		7B655E6725C54B21003FC2B8 /* iPadPro10.5,Air3th.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPadPro10.5,Air3th.storyboard"; sourceTree = "<group>"; };
+		7B655E6C25C54E19003FC2B8 /* iPadAir4th.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPadAir4th.storyboard; sourceTree = "<group>"; };
+		7B655E7025C55115003FC2B8 /* iPadPro9.7.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iPadPro9.7.storyboard; sourceTree = "<group>"; };
+		7B655E7425C5551B003FC2B8 /* iPadPro11(2th).storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPadPro11(2th).storyboard"; sourceTree = "<group>"; };
+		7B655E7825C55930003FC2B8 /* iPadPro12.9(3,4th).storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPadPro12.9(3,4th).storyboard"; sourceTree = "<group>"; };
 		7B727B2C24D038B300B93C57 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7B727B2E24D0434400B93C57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B72986C259C3BB6005350AE /* registerAnim1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = registerAnim1.json; path = ../../../../Downloads/registerAnim1.json; sourceTree = "<group>"; };
+		7B7546932598808300140D7C /* NameRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRegisterViewController.swift; sourceTree = "<group>"; };
+		7B76BEC325A452B0003440FC /* iPhone11,11ProMax.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "iPhone11,11ProMax.storyboard"; sourceTree = "<group>"; };
+		7B97A7F425582B6000EBD594 /* SavedCustumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCustumCell.swift; sourceTree = "<group>"; };
+		7B97A7F525582B6000EBD594 /* SavedCustumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedCustumCell.xib; sourceTree = "<group>"; };
+		7BA129F02597534600066146 /* SearchTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabBarController.swift; sourceTree = "<group>"; };
 		87BEE7269B0499237D37C0E8 /* Pods-FutureCreator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FutureCreator.debug.xcconfig"; path = "Target Support Files/Pods-FutureCreator/Pods-FutureCreator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,11 +131,8 @@
 				7B727B2C24D038B300B93C57 /* MenuViewController.swift */,
 				7B397C0824C5A74300AC99E3 /* SelectMethodViewViewController.swift */,
 				7B397C0A24C5CF2200AC99E3 /* SelectSchoolViewController.swift */,
-				7B33073224C6C50700031649 /* LanguageViewController.swift */,
 				7B2E3395251A1DFC005E6029 /* SelectMediaViewController.swift */,
 				7B3DA6A124C5D6210079E432 /* AloneViewController.swift */,
-				7B33073724C6D84800031649 /* DayAndTimeViewController.swift */,
-				7B307C6124C99378005C6D16 /* CalenderViewController.swift */,
 				7B3852A0252A04980016B946 /* SelectLaunguageViewController.swift */,
 				7B2CF55E252C5B5100F3C62F /* TimeViewController.swift */,
 				7B35E38E2532D448008746A5 /* ConfAndSNSViewController.swift */,
@@ -126,6 +147,7 @@
 			children = (
 				7B30988C24CAEEEB00F2F0CF /* SearchViewController.swift */,
 				7B30988E24CAFEE700F2F0CF /* SearchDetailViewController.swift */,
+				7BA129F02597534600066146 /* SearchTabBarController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -144,8 +166,6 @@
 			children = (
 				7B32D48225177C3C007B1EE4 /* ShowCalenderViewController.swift */,
 				7B337E4E25179C4E003252F0 /* EventViewController.swift */,
-				7B2E33932519F081005E6029 /* Test2ViewController.swift */,
-				7B2E33912519F06F005E6029 /* Test1ViewController.swift */,
 			);
 			path = Calender;
 			sourceTree = "<group>";
@@ -175,7 +195,9 @@
 				7B40BD2224C1BD9D00E2001F /* View */,
 				7B40BD2124C1BD8A00E2001F /* Controller */,
 				7B40BD1B24C1BD5B00E2001F /* Info.plist */,
+				7B72986C259C3BB6005350AE /* registerAnim1.json */,
 				7B727B2E24D0434400B93C57 /* GoogleService-Info.plist */,
+				7B13CD40258E079A0017F116 /* MailViewController.swift */,
 			);
 			path = FutureCreator;
 			sourceTree = "<group>";
@@ -189,6 +211,7 @@
 				7B38529D252A017B0016B946 /* Search */,
 				7B38529E252A01920016B946 /* Liked */,
 				7B38529F252A01A50016B946 /* Calender */,
+				7B7546932598808300140D7C /* NameRegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +221,15 @@
 			children = (
 				7B40BD1624C1BD5B00E2001F /* Assets.xcassets */,
 				7B40BD1324C1BD5900E2001F /* Main.storyboard */,
+				7B41E7E825AC274C00997A32 /* iPhone10,10s,11Pro,12mini.storyboard */,
+				7B5EEE2425A5F93B000A8C0C /* iPhone12,12Pro.storyboard */,
+				7B76BEC325A452B0003440FC /* iPhone11,11ProMax.storyboard */,
+				7B655E7025C55115003FC2B8 /* iPadPro9.7.storyboard */,
+				7B1DF50D25B6F40A0062B158 /* iPad7,8th.storyboard */,
+				7B655E6725C54B21003FC2B8 /* iPadPro10.5,Air3th.storyboard */,
+				7B655E6C25C54E19003FC2B8 /* iPadAir4th.storyboard */,
+				7B655E7425C5551B003FC2B8 /* iPadPro11(2th).storyboard */,
+				7B655E7825C55930003FC2B8 /* iPadPro12.9(3,4th).storyboard */,
 				7B40BD1824C1BD5B00E2001F /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -210,6 +242,10 @@
 				7B2F10DF24DE72D900DE74ED /* UserInfo.swift */,
 				7B32D48425178420007B1EE4 /* Event.swift */,
 				7B38529A2529BE110016B946 /* Study.swift */,
+				7B45DE7B254C555A00395CFD /* LikedCustumCell.swift */,
+				7B45DE7C254C555A00395CFD /* LikedCustumCell.xib */,
+				7B97A7F425582B6000EBD594 /* SavedCustumCell.swift */,
+				7B97A7F525582B6000EBD594 /* SavedCustumCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,10 +327,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B45DE7E254C555A00395CFD /* LikedCustumCell.xib in Resources */,
 				7B40BD1A24C1BD5B00E2001F /* LaunchScreen.storyboard in Resources */,
 				7B727B2F24D0434400B93C57 /* GoogleService-Info.plist in Resources */,
+				7B5EEE2525A5F93B000A8C0C /* iPhone12,12Pro.storyboard in Resources */,
+				7B76BEC425A452B0003440FC /* iPhone11,11ProMax.storyboard in Resources */,
+				7B41E7E925AC274C00997A32 /* iPhone10,10s,11Pro,12mini.storyboard in Resources */,
+				7B655E6D25C54E19003FC2B8 /* iPadAir4th.storyboard in Resources */,
+				7B655E7525C5551B003FC2B8 /* iPadPro11(2th).storyboard in Resources */,
+				7B655E6825C54B21003FC2B8 /* iPadPro10.5,Air3th.storyboard in Resources */,
 				7B40BD1724C1BD5B00E2001F /* Assets.xcassets in Resources */,
+				7B97A7F725582B6000EBD594 /* SavedCustumCell.xib in Resources */,
+				7B72986D259C3BB6005350AE /* registerAnim1.json in Resources */,
+				7B655E7925C55930003FC2B8 /* iPadPro12.9(3,4th).storyboard in Resources */,
+				7B655E7125C55115003FC2B8 /* iPadPro9.7.storyboard in Resources */,
 				7B40BD1524C1BD5900E2001F /* Main.storyboard in Resources */,
+				7B1DF50E25B6F40A0062B158 /* iPad7,8th.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,10 +395,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B307C6224C99378005C6D16 /* CalenderViewController.swift in Sources */,
 				7B727B2D24D038B300B93C57 /* MenuViewController.swift in Sources */,
-				7B2E33922519F06F005E6029 /* Test1ViewController.swift in Sources */,
+				7B13CD41258E079A0017F116 /* MailViewController.swift in Sources */,
 				7B337E4F25179C4E003252F0 /* EventViewController.swift in Sources */,
+				7B97A7F625582B6000EBD594 /* SavedCustumCell.swift in Sources */,
+				7B7546942598808300140D7C /* NameRegisterViewController.swift in Sources */,
 				7B30988D24CAEEEB00F2F0CF /* SearchViewController.swift in Sources */,
 				7B35E3912532EC08008746A5 /* SelectAttributeViewController.swift in Sources */,
 				7B40BD0E24C1BD5900E2001F /* AppDelegate.swift in Sources */,
@@ -361,8 +410,6 @@
 				7B397C0924C5A74300AC99E3 /* SelectMethodViewViewController.swift in Sources */,
 				7B38529B2529BE110016B946 /* Study.swift in Sources */,
 				7B34788724CC463D0088B1CF /* LikedDetailViewController.swift in Sources */,
-				7B33073824C6D84800031649 /* DayAndTimeViewController.swift in Sources */,
-				7B33073324C6C50700031649 /* LanguageViewController.swift in Sources */,
 				7B3DA6A224C5D6210079E432 /* AloneViewController.swift in Sources */,
 				7B2CF55F252C5B5100F3C62F /* TimeViewController.swift in Sources */,
 				7B32D48325177C3C007B1EE4 /* ShowCalenderViewController.swift in Sources */,
@@ -370,12 +417,13 @@
 				7B30408524D533080002D28D /* MailLoginViewController.swift in Sources */,
 				7B2E3396251A1DFC005E6029 /* SelectMediaViewController.swift in Sources */,
 				7B35E3932532ED4E008746A5 /* SelectAdobeViewController.swift in Sources */,
-				7B2E33942519F081005E6029 /* Test2ViewController.swift in Sources */,
 				7B40BD2724C1C66500E2001F /* ArchiveViewController.swift in Sources */,
 				7B397C0724C5A62400AC99E3 /* FloatButton.swift in Sources */,
 				7B30988F24CAFEE700F2F0CF /* SearchDetailViewController.swift in Sources */,
+				7BA129F12597534600066146 /* SearchTabBarController.swift in Sources */,
 				7B35E38F2532D448008746A5 /* ConfAndSNSViewController.swift in Sources */,
 				7B2F10E024DE72D900DE74ED /* UserInfo.swift in Sources */,
+				7B45DE7D254C555A00395CFD /* LikedCustumCell.swift in Sources */,
 				7B40BD1024C1BD5900E2001F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,16 +570,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.8;
 				DEVELOPMENT_TEAM = 3JZRVMTX25;
 				INFOPLIST_FILE = FutureCreator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.genki.FutureCreator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -541,16 +591,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.8;
 				DEVELOPMENT_TEAM = 3JZRVMTX25;
 				INFOPLIST_FILE = FutureCreator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.genki.FutureCreator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -104,7 +104,12 @@ class ConfAndSNSViewController: UIViewController {
         //Actionを追加
         actionSheet.addAction(cancelAction)
         
-        
+        //iPad対応コード
+        actionSheet.popoverPresentationController?.sourceView=self.view
+        let screenSize=UIScreen.main.bounds
+        // ここで表示位置を調整
+        // xは画面中央、yは画面下部になる様に指定
+        actionSheet.popoverPresentationController?.sourceRect=CGRect(x:screenSize.size.width/2,y:screenSize.size.height,width:0,height:0)
         //実際にAlertを表示する
         self.present(actionSheet, animated: true, completion: nil)
     }
@@ -136,7 +141,12 @@ class ConfAndSNSViewController: UIViewController {
         actionSheet.addAction(logoutAction)
         actionSheet.addAction(cancelAction)
         
-        
+        //iPad対応コード
+        actionSheet.popoverPresentationController?.sourceView=self.view
+        let screenSize=UIScreen.main.bounds
+        // ここで表示位置を調整
+        // xは画面中央、yは画面下部になる様に指定
+        actionSheet.popoverPresentationController?.sourceRect=CGRect(x:screenSize.size.width/2,y:screenSize.size.height,width:0,height:0)
         //実際にAlertを表示する
         self.present(actionSheet, animated: true, completion: nil)
     }

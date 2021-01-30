@@ -14,12 +14,68 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        //端末の画面の大きさを取得
+        let storyboard:UIStoryboard = self.grabStoryboard()
+        //表示するstoryBoardをセット！
+        if let window = window{
+            window.rootViewController = storyboard.instantiateInitialViewController() as UIViewController?
+            }
+        self.window?.makeKeyAndVisible()
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 
+    func grabStoryboard() -> UIStoryboard{
+                var storyboard = UIStoryboard()
+                let height = UIScreen.main.bounds.size.height
+                //iPhone6,6s,7,8,SE2
+                if height == 667 {
+                    storyboard = UIStoryboard(name: "Main", bundle: nil)
+                //iPhone6,6s,7,8plus
+                }else if height == 736 {
+                    storyboard = UIStoryboard(name: "iPhone8plus", bundle: nil)
+                //iPhone10,10s,11Pro
+                }else if height == 812{
+                    storyboard = UIStoryboard(name: "iPhone10,10s,11Pro,12mini", bundle: nil)
+                //iPhone 12,12Pro
+                }else if height == 844{
+                    storyboard = UIStoryboard(name: "iPhone12,12Pro", bundle: nil)
+                //iPhone11ProMax
+                }else if height == 896{
+                    storyboard = UIStoryboard(name: "iPhone11,11ProMax", bundle: nil)
+                //iPadPro9.7
+                }else if height == 1024{
+                    storyboard = UIStoryboard(name: "iPadPro9.7", bundle: nil)
+                //iPad7th,8th
+                }else if height == 1080{
+                    storyboard = UIStoryboard(name: "iPad7,8th", bundle: nil)
+                //iPadAir3th
+                }else if height == 1112{
+                    storyboard = UIStoryboard(name: "iPadPro10.5,Air3th", bundle: nil)
+                //iPadAir4th
+                }else if height == 1180{
+                    storyboard = UIStoryboard(name: "iPadAir4th", bundle: nil)
+                //iPadPro11(2th)
+                }else if height == 1194{
+                    storyboard = UIStoryboard(name: "iPadPro11(2th)", bundle: nil)
+                //iPadPro12.9(3,4th)
+                }else if height == 1366{
+                    storyboard = UIStoryboard(name: "iPadPro12.9(3,4th)", bundle: nil)
+                //iPad
+                }else{
+//                    switch UIDevice.current.model {
+//                    case "iPnone" :
+//                    storyboard = UIStoryboard(name: "se", bundle: nil)
+//                        break
+//                    case "iPad" :
+//                    storyboard = UIStoryboard(name: "iPad", bundle: nil)
+//                    print("iPad")
+//                        break
+//                    default:
+//                        break
+//                    }
+                }
+                return storyboard
+        }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

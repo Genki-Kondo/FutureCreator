@@ -9,7 +9,8 @@
 import UIKit
 import EMTNeumorphicView
 import RealmSwift
-
+import Firebase
+import FirebaseFirestore
 // デフォルトのデータベース
 
 let realm = try! Realm()
@@ -35,17 +36,26 @@ class ArchiveViewController: UIViewController {
     @IBOutlet var startButton: EMTNeumorphicView!
     @IBOutlet var dateButton: EMTNeumorphicView!
     @IBOutlet var menuButton: EMTNeumorphicView!
+    
     var floatButton = FloatButton()
-    let userName:String? = UserDefaults.standard.object(forKey: "ユーザーネーム") as! String?
+    
+    //ログインを判断するためのフラグ
+    var loginFrag = false
     //タップ数を判定
     var tapCount = 0
-    
+    //fireStoreのデータベース
+    let db = Firestore.firestore()
     //今日の格言を格納する配列
     var todaysWordArray = ["壁というのは、できる人にしかやってこない。超えられる可能性がある人にしかやってこない。だから、壁がある時はチャンスだと思っている。　Byイチロー","神様は私たちに成功してほしいなんて思っていません。ただ、挑戦することを望んでいるだけよ。 Byマザー・テレサ","万策尽きたと思うな。自ら断崖絶壁の淵にたて。その時はじめて新たなる風は必ず吹く。 By松下幸之助","人を信じよ、しかし、その百倍も自らを信じよ。　By手塚治虫","どんなに勉強し、勤勉であっても、上手くいかないこともある。これは機がまだ熟していないからであるから、ますます自らを鼓舞して耐えなければならない。 By渋沢栄一","決して屈するな。決して、決して、決して！　Byウィンストン・チャーチル","成果が出ないときこそ、不安がらずに、恐れずに、迷わずに一歩一歩進めるかどうかが、成長の分岐点であると考えています。 By羽生善治","Stay hungry. Stay foolish.ハングリーであれ。愚か者であれ。 Byスティーブ・ジョブズ","何かを捨てないと前に進めない。 Byスティーブ・ジョブズ","目標を達成するには、全力で取り組む以外に方法はない。そこに近道はない。 Byマイケル・ジョーダン","10本連続でシュートを外しても僕はためらわない。次の1本が成功すれば、それは100本連続で成功する最初の1本目かもしれないだろう。 byマイケル・ジョーダン","何かを始めるのは怖いことではない。怖いのは何も始めないことだ。 byマイケル・ジョーダン","崖っぷちありがとう！最高だ！ by松岡修造","もっと熱くなれよ！熱い血燃やしてけよ！！人間熱くなったときがホントの自分に出会えるんだ！！by松岡修造","「念ずれば花開く」という言葉があります。私は何かをするとき、必ずこれは成功するという、いいイメージを思い描くようにしています。by瀬戸内寂聴","あなたが転んでしまったことに関心はない。そこから立ち上がることに関心があるのだ。 byエイブラハム・リンカーン","世界には、きみ以外には誰も歩むことのできない唯一の道がある。その道はどこに行き着くのか、と問うてはならない。ひたすら進め。byニーチェ","あなたが出会う最悪の敵は、いつもあなた自身であるだろう。byニーチェ","君が独りの時、本当に独りの時、誰もができなかったことをなしとげるんだ。だから、しっかりしろ。byジョン・レノン","すべてを今すぐに知ろうとは無理なこと。雪が解ければ見えてくる。byゲーテ"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        if userName?.isEmpty == false{
-            print(userName)
+        
+        var userNameAlartCheck:String? = UserDefaults.standard.object(forKey: "ユーザーネーム") as! String?
+        print(userNameAlartCheck)
+        if userNameAlartCheck?.isEmpty == false{
+            //データベースをインスタンス化
+            createDataBase()
+            print(userNameAlartCheck)
         }else{
             pleaseRegisterAlart()
         }
@@ -70,18 +80,35 @@ class ArchiveViewController: UIViewController {
         floatButton.changeButton(button: menuButton)
         
     }
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        let userDefaults = UserDefaults.standard
-//        let firstLunchKey = "firstLunchKey"
-//        if userDefaults.bool(forKey: firstLunchKey) == true{
-//            userDefaults.set(false, forKey: firstLunchKey)
-//            print("toNameRegister")
-//
-//            performSegue(withIdentifier: "toNameRegister", sender: nil)
-//        }
-//    }
     
+    //データベースをインスタンス化
+    func createDataBase(){
+        
+        var userNameDataCheck:String? = UserDefaults.standard.object(forKey: "ユーザーネーム") as! String?
+        db.collection("users").document(userNameDataCheck!).updateData(["データベースの有無":""]) { [self] err in
+            if let err = err {
+                print("Error writing document: \(err)")
+                self.db.collection("users").document(userNameDataCheck!).setData(["likedTitleArray":""])
+                
+                let postTitleArray : [String] = [""]
+                let postUrlArray : [String] = [""]
+                // 要素の追加
+                self.db.collection("users").document(userNameDataCheck!).updateData([
+                    userNameDataCheck!+"likedTitleArray":FieldValue.arrayUnion(postTitleArray),
+                    userNameDataCheck!+"likedUrlArray":FieldValue.arrayUnion(postUrlArray)
+                ])
+                // 要素の削除
+                db.collection("users").document(userNameDataCheck!).updateData([
+                    userNameDataCheck!+"likedTitleArray":FieldValue.arrayRemove([postTitleArray[0]]),
+                    userNameDataCheck!+"likedUrlArray":FieldValue.arrayRemove([postUrlArray[0]])
+                ])
+            } else {
+                
+                print("Document successfully written!")
+            }
+        }
+        
+    }
     //画面遷移する時に日付を記録
     @IBAction func toMethodView(_ sender: Any) {
         //"yyyy/MM/dd/"に変換してpublicDateに代入する
@@ -118,12 +145,22 @@ class ArchiveViewController: UIViewController {
                 (action: UIAlertAction!) -> Void in
             self.performSegue(withIdentifier: "toMailRegister1", sender: nil)
             })
-            // ニックネーム
-        let cancelAction: UIAlertAction = UIAlertAction(title: "ニックネームのみ", style: UIAlertAction.Style.default, handler:{
+            // ゲスト
+        let cancelAction: UIAlertAction = UIAlertAction(title: "ゲストとして始める", style: UIAlertAction.Style.default, handler:{ [self]
+            
                 // ボタンが押された時の処理を書く（クロージャ実装）
                 (action: UIAlertAction!) -> Void in
-            self.performSegue(withIdentifier: "toNameRegister", sender: nil)
-                print("ニックネームのみ")
+            let randomInt1 = Int.random(in: 0..<9)
+            let randomInt2 = Int.random(in: 0..<9)
+            let randomInt3 = Int.random(in: 0..<9)
+            let randomInt4 = Int.random(in: 0..<9)
+            let userName = "ゲストユーザー"+String(randomInt1)+String(randomInt2)+String(randomInt3)+String(randomInt4)
+            UserDefaults.standard.set(userName, forKey: "ユーザーネーム")
+            createDataBase()
+            
+            print(userName)
+//            self.performSegue(withIdentifier: "toNameRegister", sender: nil)
+//                print("ニックネームのみ")
             })
 
             // ③ UIAlertControllerにActionを追加
@@ -135,7 +172,12 @@ class ArchiveViewController: UIViewController {
     }
     
     
-//    @IBAction func w(_ sender: Any) {
+//    @IBAction func e(_ sender: Any) {
+//        var userNameef:String? = UserDefaults.standard.object(forKey: "ユーザーネーム") as! String?
+//        print(userNameef!)
+//    }
+    
+    //    @IBAction func w(_ sender: Any) {
 //        let appDomain = Bundle.main.bundleIdentifier
 //        UserDefaults.standard.removePersistentDomain(forName: appDomain!)
 //    }
